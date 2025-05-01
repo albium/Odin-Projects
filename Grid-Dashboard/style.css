@@ -14,8 +14,8 @@ body {
   height: 100vh;
 }
 .container div {
-  padding: 15px;
-  font-size: 32px;
+  padding: 20px;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -40,4 +40,39 @@ body {
 
   gap: 4rem;
   /* puts a gap between the first ul and the second ul */
+}
+.house {
+  list-style-image: url(./image/home\ button.svg);
+}
+
+.profile {
+  list-style-image: url(./image/face-recognition.svg);
+}
+
+.menu li:hover {
+  font-size: 2.5rem;
+  cursor: pointer;
+  background-color: teal;
+}
+
+.messages {
+  list-style-image: url(./image/message-text.svg);
+}
+.history {
+  list-style-image: url(./image/history.svg);
+}
+.task {
+  list-style-image: url(./image/checkbox-marked-circle-auto-outline.svg);
+}
+.communities {
+  list-style-image: url(./image/account-multiple.svg);
+}
+.settings {
+  list-style-image: url(./image/cog.svg);
+}
+.support {
+  list-style-image: url(./image/face-agent.svg);
+}
+.privacy {
+  list-style-image: url(./image/eye-lock.svg);
 }
