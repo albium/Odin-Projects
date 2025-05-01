@@ -29,12 +29,16 @@ body {
 }
 .header {
   grid-area: header;
+  background-color: white;
 }
 .main-content {
   background-color: tomato;
   grid-area: main-content;
   background-color: peachpuff;
 }
+
+/* CSS FOR THE SIDEBAR
+ */
 .menu {
   display: grid;
 
@@ -84,4 +88,39 @@ ul:hover li:not(:hover) {
 }
 .privacy {
   list-style-image: url(./image/eye-lock.svg);
+}
+/* this above ends the css for the sidebar //////////*/
+
+/* here we will begin our css for header */
+.menu-header.welcome {
+  color: black;
+}
+a:link {
+  color: grey;
+}
+a:link:hover {
+  color: greenyellow;
+}
+input {
+  border-radius: 20px;
+  border: 1px solid grey;
+  width: 100%;
+}
+.profile-pic {
+  border-radius: 20px;
+  height: auto;
+  float: left;
+  padding: 5px;
+}
+.btn-actions {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  gap: 10px;
+}
+.btn-actions button {
+  border-radius: 50px;
+  background-color: rgb(19, 128, 172);
+  border: 2px solid gainsboro;
+  font-size: 3rem;
+  padding: 15px;
 }
