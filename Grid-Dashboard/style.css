@@ -53,7 +53,16 @@ body {
   font-size: 2.5rem;
   cursor: pointer;
   background-color: teal;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+  /* scales and at the same time grows and scales down smoothly
+  after not hovering element  */
 }
+
+ul:hover li:not(:hover) {
+  opacity: 0.5;
+}
+/* the rest of the li on the list will fade a little */
 
 .messages {
   list-style-image: url(./image/message-text.svg);
