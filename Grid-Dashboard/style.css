@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 body {
   background-color: rgba(180, 180, 180, 0.815);
@@ -12,15 +13,31 @@ body {
     "sidebar main-content";
   height: 100vh;
 }
+.container div {
+  padding: 15px;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .sidebar {
   grid-area: sidebar;
-  background-color: tomato;
+  background-color: rgb(19, 128, 172);
+}
+.logo {
+  text-align: center;
 }
 .header {
   grid-area: header;
-  background-color: skyblue;
 }
 .main-content {
+  background-color: tomato;
   grid-area: main-content;
   background-color: peachpuff;
+}
+.menu {
+  display: grid;
+
+  gap: 4rem;
+  /* puts a gap between the first ul and the second ul */
 }
