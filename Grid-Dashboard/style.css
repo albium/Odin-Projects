@@ -114,6 +114,7 @@ input {
   border: 1px solid grey;
   width: 100%;
   padding: 20px;
+  font-size: 1rem;
   /* transition: border-color 0.3s, box-shadow 0.3s;
   what this does is calls on the box shadow and applies the color 
   as you hover. 
@@ -161,4 +162,10 @@ input:focus {
   transition: all 0.2s ease-in-out;
   outline: none;
   /* outlin takes away the default style where it shows you the input line */
+}
+/* Hide icon if the input inside is focused  applies they style to the parent
+only if the children has the element in there*/
+.search-bar:has(input:focus) .mag-icon {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
