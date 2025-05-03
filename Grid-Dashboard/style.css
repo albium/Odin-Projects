@@ -107,6 +107,11 @@ input {
   border-radius: 20px;
   border: 1px solid grey;
   width: 100%;
+  padding: 20px;
+  /* transition: border-color 0.3s, box-shadow 0.3s;
+  what this does is calls on the box shadow and applies the color 
+  as you hover. 
+} */
 }
 .profile-pic {
   border-radius: 20px;
@@ -115,9 +120,8 @@ input {
   padding: 5px;
 }
 .btn-actions {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  display: grid;
-  gap: 10px;
+  display: flex;
+  gap: 20px;
 }
 .btn-actions button {
   border-radius: 50px;
@@ -135,4 +139,22 @@ button:hover {
 }
 .mag-icon {
   display: flex;
+}
+.search-bar {
+  position: relative;
+}
+.mag-icon {
+  position: absolute;
+}
+input:hover {
+  border: 2px solid skyblue;
+}
+input:active {
+  filter: opacity(0.5);
+}
+input:focus {
+  box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  /* outlin takes away the default style where it shows you the input line */
 }
