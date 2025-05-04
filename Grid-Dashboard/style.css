@@ -41,6 +41,8 @@ body {
   display: flex;
   box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
   z-index: 1;
+  /*  the box-shadow and the z-index work to gether to give you that
+  shadow affect between to sections. in this case our header and the main-section */
 }
 .main-content {
   background-color: tomato;
@@ -207,8 +209,9 @@ only if the children has the element in there*/
   gap: 20px;
 }
 .right-sidebar {
+  display: flex;
   gap: 20px;
-  display: grid;
+  flex-direction: column;
 }
 .action-icon {
   width: 20px;
