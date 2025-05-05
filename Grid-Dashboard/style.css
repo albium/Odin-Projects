@@ -219,3 +219,8 @@ only if the children has the element in there*/
   display: flex;
   gap: 20px;
 }
+.button-section button:active {
+  transform: scale(0.98);
+  /* when user clicks on the button it gives a 
+  visual that you clicked on it */
+}
