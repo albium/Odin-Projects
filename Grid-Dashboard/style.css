@@ -136,11 +136,12 @@ input {
   float: left;
   padding: 5px;
 }
-.btn-actions {
+.button-section {
   display: flex;
-  gap: 20px;
+  gap: 12px;
+  padding: 1rem;
 }
-.btn-actions button {
+.button-section button {
   border-radius: 50px;
   background-color: var(--back-color-blue);
   border: 2px solid gainsboro;
@@ -185,6 +186,10 @@ only if the children has the element in there*/
   color: black;
   /* color: grey; */
   /* text-align: left; */
+  font-weight: 400;
+  /* Regular weight */
+  line-height: 1.5;
+  /* Optional: improves readability */
 }
 .title {
   text-transform: capitalize;
@@ -196,7 +201,7 @@ only if the children has the element in there*/
 .card {
   background-color: var(--color-white-btn);
   border-radius: 10px;
-  border-left: 6px solid #f4b400; /* yellow stripe on the left */
+  border-left: 6px solid turquoise; /* yellow stripe on the left */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 .big-card div {
@@ -223,4 +228,22 @@ only if the children has the element in there*/
   transform: scale(0.98);
   /* when user clicks on the button it gives a 
   visual that you clicked on it */
+}
+.trending {
+  display: flex;
+  flex-direction: column;
+  border-left: 8px solid thistle;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+.trending img {
+  float: left;
+  margin: 10px;
+}
+.announcement {
+  border-left: 8px solid teal;
+}
+.trending p {
 }
