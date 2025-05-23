@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --background-color: tomato;
+  --background-color: peachpuff;
+  --background-color: skyblue;
+
+  --text-color-white: white;
+  --text-color-black: black;
+
+  /* card color on a dark background ---light mode--- */
+  /* Backgrounds */
+  --background-light: #ffffff;
+  --surface-light: #f5f5f5;
+  --card-light: #ffffff;
+
+  /* Text */
+  --title-light: #1a1a1a;
+  --text-light: #333333;
+  --muted-text-light: #777777;
+
+  /* Accent & Buttons */
+  --primary-light: #3c83f6;
+  --primary-light-hover: #2f6be4;
+  --primary-light-active: #2659c6;
+
+  /* Borders and Dividers */
+  --border-light: #e0e0e0;
+  --divider-light: #d0d0d0;
+
+  /* Alerts / Status */
+  --success-light: #28a745;
+  --warning-light: #ffc107;
+  --error-light: #dc3545;
+  --info-light: #17a2b8;
+
+  /* Shadows (if needed) */
+  --shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* card color on a dark background ---dark mode--- */
+
+  /* Backgrounds */
+  --background-dark: #121212;
+  --surface-dark: #1e1e1e;
+  --card-dark: #252525;
+
+  /* Text */
+  --title-dark: #f1f1f1;
+  --text-dark: #cacaca;
+  --muted-text-dark: #888888;
+
+  /* Accent & Buttons */
+  --primary-dark: #3c83f6;
+  --primary-dark-hover: #5a9afc;
+  --primary-dark-active: #2b6cd3;
+
+  /* Borders and Dividers */
+  --border-dark: #2c2c2c;
+  --divider-dark: #3a3a3a;
+
+  /* Alerts / Status */
+  --success-dark: #28a745;
+  --warning-dark: #ffc107;
+  --error-dark: #dc3545;
+  --info-dark: #17a2b8;
+
+  /* Shadows (if needed) */
+  --shadow-dark: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
