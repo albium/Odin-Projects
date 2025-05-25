@@ -69,3 +69,20 @@
   /* Shadows (if needed) */
   --shadow-dark: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
+
+/* style.css */
+body.win {
+  background-color: #a8f0a1; /* light green */
+}
+
+body.lose {
+  background-color: #f0a1a1; /* light red */
+}
+
+body.tie {
+  background-color: #cccccc; /* grey */
+}
+
+body.default {
+  background-color: #ffffff; /* white or your base color */
+}
