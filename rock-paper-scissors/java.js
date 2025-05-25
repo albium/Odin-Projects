@@ -2,7 +2,7 @@ const buttonPaper = document.getElementById("buttonPaper");
 const buttonRock = document.getElementById("buttonRock");
 const buttonScissors = document.getElementById("buttonScissors");
 const buttonDark = document.getElementById("buttonDark");
-const gamebox = document.querySelector(".gamebox");
+
 let result = document.getElementById("result");
 let buttonReset = document.getElementById("buttonReset");
 let roundsPlayed = 0;
