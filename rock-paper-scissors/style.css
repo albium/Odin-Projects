@@ -122,3 +122,27 @@ body.tie {
 .gamebox.stop {
   background-color: var(--error-light);
 }
+/* Dark mode */
+
+body.dark {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+/* Dark mode styles for .gamebox */
+body.dark .gamebox {
+  background-color: var(--card-dark);
+  border-color: var(--border-dark);
+}
+
+/* Dark mode button styles */
+body.dark button {
+  background-color: var(--primary-dark);
+  color: var(--text-dark);
+}
+body.dark button:hover {
+  background-color: var(--primary-dark-hover);
+}
+body.dark button:active {
+  background-color: var(--primary-dark-active);
+}

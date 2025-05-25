@@ -1,6 +1,7 @@
 const buttonPaper = document.getElementById("buttonPaper");
 const buttonRock = document.getElementById("buttonRock");
 const buttonScissors = document.getElementById("buttonScissors");
+const buttonDark = document.getElementById("buttonDark");
 const gamebox = document.querySelector(".gamebox");
 let result = document.getElementById("result");
 let buttonReset = document.getElementById("buttonReset");
@@ -60,15 +61,19 @@ function showGameWinner() {
   return winner;
 }
 function setBackground(resultType) {
-  document.body.className = ""; // Clear previous classes
-  document.body.classList.add(resultType); // Add the current result class (e.g., 'win')
+  document.body.classList.remove("win", "lose", "tie");
+  document.body.classList.add(resultType); // just updates the game result background
 }
 
 function endGameStop() {
   gamebox.classList.add("stop");
+}
+function DarkMode() {
+  document.body.classList.toggle("dark");
 }
 
 buttonRock.addEventListener("click", () => playGame("rock"));
 buttonPaper.addEventListener("click", () => playGame("paper"));
 buttonScissors.addEventListener("click", () => playGame("scissors"));
 buttonReset.addEventListener("click", resetGame);
+buttonDark.addEventListener("click", DarkMode);
