@@ -71,18 +71,18 @@
 }
 
 /* style.css */
+body {
+  transition: background-color 0.4s ease;
+}
+
 body.win {
-  background-color: #a8f0a1; /* light green */
+  background-color: #a8f0a1;
 }
 
 body.lose {
-  background-color: #f0a1a1; /* light red */
+  background-color: #f0a1a1;
 }
 
 body.tie {
-  background-color: #cccccc; /* grey */
-}
-
-body.default {
-  background-color: #ffffff; /* white or your base color */
+  background-color: #cccccc;
 }
