@@ -20,6 +20,7 @@ function playGame(playerChoice) {
 
   if (playerChoice === computer) {
     result.textContent = `it's a tie play chose ${playerChoice}`;
+    setBackground("tie");
   } else if (
     (playerChoice === "rock" && computer === "scissors") ||
     (playerChoice === "paper" && computer === "rock") ||
@@ -27,9 +28,11 @@ function playGame(playerChoice) {
   ) {
     result.textContent = `you win ${playerChoice} beats ${computer}`;
     gamePointPlayer++;
+    setBackground("win");
   } else {
     result.textContent = `you lose ${computer} beats ${playerChoice} `;
     gamePointComputer++;
+    setBackground("lose");
   }
   roundsPlayed++; // Increment the round counter after each game
 
@@ -44,11 +47,16 @@ function resetGame() {
   gamePointPlayer = 0;
   gamePointComputer = 0;
   result.textContent = "";
+  setBackground("default");
 }
 function showGameWinner() {
   let winner =
     gamePointPlayer > gamePointComputer ? "Player Winner" : "Computer Winner";
   return winner;
+}
+function setBackground(resultType) {
+  document.body.className = ""; // Clear previous classes
+  document.body.classList.add(resultType); // Add the current result class (e.g., 'win')
 }
 
 buttonRock.addEventListener("click", () => playGame("rock"));
