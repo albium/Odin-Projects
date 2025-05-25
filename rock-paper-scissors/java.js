@@ -33,11 +33,11 @@ function playGame(playerChoice) {
 
   if (roundsPlayed === 5) {
     alert("Game over! You played 5 rounds.");
+    result.textContent = "Game reset! Press a button to play again.";
   }
 }
 function resetGame() {
   roundsPlayed = 0;
-  result.textContent = "Game reset! Press a button to play again.";
 }
 
 buttonRock.addEventListener("click", () => playGame("rock"));
