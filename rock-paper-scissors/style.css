@@ -87,6 +87,9 @@ h1 {
   background-color: var(--surface-light);
   padding: 20px 40px;
   border-color: var(--border-light);
+  border-radius: 20px;
+  width: 50vw;
+  height: auto;
 }
 button {
   border: none;
