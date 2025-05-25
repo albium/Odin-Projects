@@ -119,20 +119,22 @@ body.lose {
 body.tie {
   background-color: #cccccc;
 }
-.gamebox.stop {
-  background-color: var(--error-light);
-}
+
 /* Dark mode */
 
 body.dark {
   background-color: var(--background-dark);
-  color: var(--text-dark);
+  color: var(--title-dark);
 }
 
 /* Dark mode styles for .gamebox */
 body.dark .gamebox {
   background-color: var(--card-dark);
   border-color: var(--border-dark);
+  color: var(--title-dark);
+}
+body.dark h1 {
+  color: var(--title-dark);
 }
 
 /* Dark mode button styles */
@@ -145,4 +147,21 @@ body.dark button:hover {
 }
 body.dark button:active {
   background-color: var(--primary-dark-active);
+}
+
+body.dark.win {
+  background-color: #145214; /* dark green */
+}
+
+body.dark.lose {
+  background-color: #521414; /* dark red */
+}
+
+body.dark.tie {
+  background-color: #444444; /* dark gray */
+}
+/* disable button */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }

@@ -53,7 +53,9 @@ function resetGame() {
   gamePointComputer = 0;
   result.textContent = "";
   setBackground("default");
-  gamebox.classList.remove("stop");
+  buttonRock.disabled = false;
+  buttonPaper.disabled = false;
+  buttonScissors.disabled = false;
 }
 function showGameWinner() {
   let winner =
@@ -66,7 +68,9 @@ function setBackground(resultType) {
 }
 
 function endGameStop() {
-  gamebox.classList.add("stop");
+  buttonRock.disabled = true;
+  buttonPaper.disabled = true;
+  buttonScissors.disabled = true;
 }
 function DarkMode() {
   document.body.classList.toggle("dark");
