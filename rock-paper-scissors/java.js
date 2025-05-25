@@ -4,6 +4,9 @@ let buttonScissors = document.getElementById("buttonScissors");
 let result = document.getElementById("result");
 let buttonReset = document.getElementById("buttonReset");
 let roundsPlayed = 0;
+let gamePointPlayer = 0;
+let gamePointComputer = 0;
+let winner;
 
 function computerChoice() {
   const gameChoose = ["rock", "paper", "scissors"];
@@ -13,7 +16,7 @@ function computerChoice() {
 
 function playGame(playerChoice) {
   if (roundsPlayed >= 5) {
-    alert("Game over! You played 5 rounds.");
+    alert("to play again please click restart");
     return; // Stop the game after 5 rounds
   }
   const computer = computerChoice();
@@ -26,18 +29,29 @@ function playGame(playerChoice) {
     (playerChoice === "scissors" && computer === "paper")
   ) {
     result.textContent = `you win ${playerChoice} beats ${computer}`;
+    gamePointPlayer++;
   } else {
     result.textContent = `you lose ${computer} beats ${playerChoice} `;
+    gamePointComputer++;
   }
   roundsPlayed++; // Increment the round counter after each game
 
   if (roundsPlayed === 5) {
-    alert("Game over! You played 5 rounds.");
-    result.textContent = "Game reset! Press a button to play again.";
+    result.textContent = "Press the   reset button to play again.";
+
+    alert(`Game over: ${showGameWinner()}`);
   }
 }
 function resetGame() {
   roundsPlayed = 0;
+  gamePointPlayer = 0;
+  gamePointComputer = 0;
+  result.textContent = "";
+}
+function showGameWinner() {
+  let winner =
+    gamePointPlayer > gamePointComputer ? "Player Winner" : "Computer Winner";
+  return winner;
 }
 
 buttonRock.addEventListener("click", () => playGame("rock"));
