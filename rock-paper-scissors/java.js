@@ -1,4 +1,7 @@
+const buttonPaper = document.getElementById("buttonPaper");
+const buttonRock = document.getElementById("buttonRock");
 const buttonScissors = document.getElementById("buttonScissors");
+const gamebox = document.querySelector(".gamebox");
 let result = document.getElementById("result");
 let buttonReset = document.getElementById("buttonReset");
 let roundsPlayed = 0;
@@ -40,6 +43,7 @@ function playGame(playerChoice) {
     result.textContent = "Press the   reset button to play again.";
 
     alert(`Game over: ${showGameWinner()}`);
+    endGameStop();
   }
 }
 function resetGame() {
@@ -48,6 +52,7 @@ function resetGame() {
   gamePointComputer = 0;
   result.textContent = "";
   setBackground("default");
+  gamebox.classList.remove("stop");
 }
 function showGameWinner() {
   let winner =
@@ -57,6 +62,10 @@ function showGameWinner() {
 function setBackground(resultType) {
   document.body.className = ""; // Clear previous classes
   document.body.classList.add(resultType); // Add the current result class (e.g., 'win')
+}
+
+function endGameStop() {
+  gamebox.classList.add("stop");
 }
 
 buttonRock.addEventListener("click", () => playGame("rock"));

@@ -3,9 +3,7 @@
   margin: 0;
 }
 :root {
-  --background-color: tomato;
-  --background-color: peachpuff;
-  --background-color: skyblue;
+  --background-color-test: skyblue;
 
   --text-color-white: white;
   --text-color-black: black;
@@ -71,8 +69,43 @@
 }
 
 /* style.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  color: var(--title-light);
+}
+
+.gamebox {
+  background-color: var(--surface-light);
+  padding: 20px 40px;
+  border-color: var(--border-light);
+}
+button {
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 1rem;
+  background-color: var(--primary-light);
+  color: var(--text-light);
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--primary-light-hover);
+  scale: 1.1;
+}
+button:active {
+  background-color: var(--primary-light-active);
+}
+
 body {
   transition: background-color 0.4s ease;
+}
+body.default {
+  background-color: var(--background-light);
 }
 
 body.win {
@@ -85,4 +118,7 @@ body.lose {
 
 body.tie {
   background-color: #cccccc;
+}
+.gamebox.stop {
+  background-color: var(--error-light);
 }
