@@ -74,6 +74,10 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  height: 100vh;
+}
+.gamebox {
+  align-self: center;
 }
 h1 {
   color: var(--title-light);
