@@ -1,12 +1,9 @@
-let buttonRock = document.getElementById("buttonRock");
-let buttonPaper = document.getElementById("buttonPaper");
-let buttonScissors = document.getElementById("buttonScissors");
+const buttonScissors = document.getElementById("buttonScissors");
 let result = document.getElementById("result");
 let buttonReset = document.getElementById("buttonReset");
 let roundsPlayed = 0;
 let gamePointPlayer = 0;
 let gamePointComputer = 0;
-let winner;
 
 function computerChoice() {
   const gameChoose = ["rock", "paper", "scissors"];
